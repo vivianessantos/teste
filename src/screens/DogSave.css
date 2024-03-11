@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #edc183;
+}
+
+.saved-dogs-container {
+  position: fixed;
+  top: 160px; 
+  bottom: 60px; 
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: flex-start; 
+}
+
+.title-save {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.dog-cards {
+  flex: 0 0 calc(25% - 20px);
+  margin-right: 20px; 
+  margin-bottom: 20px; 
+}
+
+.dog-cards:nth-child(4n) {
+  margin-right: 0;
+}
+.button-container {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.title-button-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #edc183; 
+}
+
+.button {
+  background-color: #e9ab65;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 30px;
+}
+
+.button:hover {
+  background-color: #d99b4e;
+}
+
+.filter-container {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  background-color: #f0d4ad;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+  z-index: 1; 
+  margin-top: 20px;
+}
+
+.filter-container select {
+  padding: 5px;
+  margin-right: 10px; 
+}
